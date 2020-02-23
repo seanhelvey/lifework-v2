@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-theme-teranova",
+      options: {
+        headingFont: `Vollkorn`, // default google font
+        bodyFont: 'Roboto', // default google font
+      }
+    }    
   ],
 }
